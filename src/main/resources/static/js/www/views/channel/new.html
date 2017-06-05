@@ -46,15 +46,15 @@
                                 <div class="form-group form-group-sm col-md-12">
                                     <label for="">Tipo</label>
                                     <select class="form-control" ng-model="channel.type" name="type">
-                                        <option value="1">YouTube</option>
-                                        <option value="2">Twitch</option>
+                                        <option value="youtube">YouTube</option>
+                                        <option value="twitch">Twitch</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-group form-group-sm col-md-12">
                                     <label for="">Url</label>
-                                    <input type="text" class="form-control" ng-model="channel.url" name="url" placeholder="{{channel.type == '1' ? 'https://youtube.com/mylive' : 'https://twitch.com/mylive' }}" / >
+                                    <input type="text" class="form-control" ng-model="channel.url" name="url" placeholder="{{channel.type == 'youtube' ? 'https://youtube.com/mylive' : 'https://twitch.com/mylive' }}" / >
                                 </div>
                             </div>
                         </div>
