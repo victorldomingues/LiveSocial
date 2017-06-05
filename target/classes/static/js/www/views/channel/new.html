@@ -6,17 +6,17 @@
             <p>
                 <strong>crie ou edite um novo canal</strong></p>
             <hr>
-        <div >
+        <div ng-show="!isBusy" >
             <div class="row">
                 <div class="col-md-3 ">
                     <div class="panel panel-default">
                         <div class="panel-body">
                             <div class="form-group">
-                                <button class="btn btn-primary btn-lg " style="width:100%"> Transmitir </button>
+                                <button class="btn btn-primary btn-lg " style="width:100%" ng-click="addChannel()"> Transmitir </button>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Compartilhar</label>
-                                <input type="text" class="form-control" ng-model="channel.share" disabled>
+                                <input type="text" class="form-control" ng-model="channel.share">
                             </div>
                         </div>
                     </div>
@@ -66,16 +66,16 @@
                         <div class="panel-body">
                             <div class="row" ng-repeat="tweet in tweets">
                                 <div class="col-md-12">
-                                    <strong ng-bind="tweet.user.name"></strong><br />
+                                    <strong> <input type="checkbox" ng-checked="changeTweet(tweet)" /> <span ng-bind="tweet.user.name"></span> </strong><br />
                                     <small ng-bind="tweet.text"></small>
                                 </div>
                             </div>
-                            <pre>
-                            {{ tweets }} </pre>
-
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div ng-show="isBusy">
+           <center> <h2>Carregando...</h2></center>
         </div>
     </div>

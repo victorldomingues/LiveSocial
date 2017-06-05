@@ -13,14 +13,14 @@
                     <div class="panel-heading" style="height: 50px">
                         <h3 style="margin-top:0px" >Nome do canal</h3 style="margin-top:0px" >
                     </div>
-                    <div class="panel-body" style="height: 200px">
-                        <p><strong>Nome do usuario</strong></p>
-                        <p><small>Duração: x.y.z</small></p>
-                        <p><a class="btn btn-primary" style="width:100%" href="#!/live/1">Assistir </a></p>
+                    <div ng-repeat="live in lives" class="panel-body" style="height: 200px">
+                        <p><strong ng-bind="live.name">Nome do usuario</strong></p>
+                        <p><small>Início: <span ng-bind="live.date | date : 'dd/MM/yyyy HH:mm'"></span></small></p>
+                        <p><a class="btn btn-primary" style="width:100%" href="#!/live/{{live.id}}">Assistir </a></p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <!--<div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading" style="height: 50px">
                         <h3 style="margin-top:0px" >Nome do canal</h3 style="margin-top:0px" >
@@ -79,6 +79,6 @@
                         <p><a class="btn btn-primary" style="width:100%" href="#!/live/1">Assistir </a></p>
                     </div>
                 </div>
-            </div>
+            </div>-->
         </div>
 </div>

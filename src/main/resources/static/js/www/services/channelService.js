@@ -1,5 +1,5 @@
 angular.module("liveSocial")
-    .factory('ApiService', ['$localStorageService', function (localStorageService) {
+    .factory('ApiService', ['localStorageService', function (localStorageService) {
         var Channel = {
             list: function () {
                 var channelsString = localStorageService.get("channels");

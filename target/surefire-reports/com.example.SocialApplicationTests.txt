@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.example.SocialApplicationTests
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 95.275 sec - in com.example.SocialApplicationTests

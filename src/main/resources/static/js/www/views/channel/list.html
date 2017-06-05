@@ -13,7 +13,13 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
+            <tr ng-repeat="channel in channels">
+                <td ng-bind="channel.name"></td>
+                <td>
+        <center><a href="#!/channel/{{channel.id}}" class="btn  btn-default">Editar</a></center>
+        </td>
+        </tr>
+            <!--<tr>
                 <td>John</td>
                 <td>
         <center><a href="#!/channel/1" class="btn  btn-default">Editar</a></center>
@@ -30,7 +36,7 @@
             <td>
         <center><a href="#!/channel/1" class="btn  btn-default">Editar</a></center>
         </td>
-        </tr>
+        </tr>-->
         </tbody>
     </table>
 </div>
