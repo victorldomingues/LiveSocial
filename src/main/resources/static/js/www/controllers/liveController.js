@@ -18,7 +18,7 @@ angular.module("liveSocial")
         $scope.tweetsCount  = 0;
 
         $scope.getTweet = function () {
-            $scope.tweet = $scoe.live.tweets[$scope.tweetsCount];
+            $scope.tweet = $scope.live.tweets[$scope.tweetsCount];
             $scope.tweet.show  =  true;
             $timeout($scope.closeTweet, 5000);
         }
@@ -34,7 +34,7 @@ angular.module("liveSocial")
 
 
         $scope.getChannel = function () {
-            $scoe.live = ApiService.Channel.get(liveId);
+            $scope.live = ApiService.Channel.get(liveId);
         };
 
         $scope.getChannel();
