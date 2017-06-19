@@ -97,7 +97,7 @@ angular.module("liveSocial")
 			var channels = ApiService.Channel.list();
 			$scope.channel.id = channels.length;
 			$scope.channel.name = '# ' + $scope.channel.id + ' | ' + $scope.user;
-			$scope.channel.share = "http://localhost:8080/#!/channel/" + $scope.channel.id;
+			$scope.channel.share = "http://localhost:8080/#!/live/" + $scope.channel.id;
 			$scope.channel.date = new Date();
 			ApiService.Channel.save($scope.channel);
 			console.log($scope.channel);
