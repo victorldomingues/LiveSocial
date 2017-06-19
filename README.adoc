@@ -5,5 +5,7 @@ Live social, integrated streaming project with social networks, work done for th
 ## Members
 
 @victorldomingues
+
 @Gordogordu
+
 Beatriz Bafini
