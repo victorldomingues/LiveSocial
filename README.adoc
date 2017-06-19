@@ -1,1 +1,9 @@
+#Live Social
 
+Live social, integrated streaming project with social networks, work done for the discipline of integrated project prof. Dr. Fernando Kakugawa - Anhembi Morumbi
+
+## Members
+
+@victorldomingues
+@Gordogordu
+Beatriz Bafini
